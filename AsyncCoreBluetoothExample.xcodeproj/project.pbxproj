@@ -3,12 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 60;
+	objectVersion = 56;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2245C4372D20F10B006A83BE /* MightFail in Frameworks */ = {isa = PBXBuildFile; productRef = 2245C4362D20F10B006A83BE /* MightFail */; };
-		2245C4392D210632006A83BE /* DequeModule in Frameworks */ = {isa = PBXBuildFile; productRef = 2245C4382D210632006A83BE /* DequeModule */; };
+		225192232D2227C0007E4C2C /* AsyncCoreBluetooth in Frameworks */ = {isa = PBXBuildFile; productRef = 225192222D2227C0007E4C2C /* AsyncCoreBluetooth */; };
+		225192262D2227D5007E4C2C /* MightFail in Frameworks */ = {isa = PBXBuildFile; productRef = 225192252D2227D5007E4C2C /* MightFail */; };
+		225192292D2227EA007E4C2C /* Collections in Frameworks */ = {isa = PBXBuildFile; productRef = 225192282D2227EA007E4C2C /* Collections */; };
 		228B58D42A93D0D10014EEF1 /* AsyncCoreBluetoothExampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 228B58D32A93D0D10014EEF1 /* AsyncCoreBluetoothExampleApp.swift */; };
 		228B58D62A93D0D10014EEF1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 228B58D52A93D0D10014EEF1 /* ContentView.swift */; };
 		228B58D82A93D0D30014EEF1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 228B58D72A93D0D30014EEF1 /* Assets.xcassets */; };
@@ -20,7 +21,6 @@
 		228B59022A9412D60014EEF1 /* ScanningPeripherals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 228B59012A9412D60014EEF1 /* ScanningPeripherals.swift */; };
 		228B59042A94139D0014EEF1 /* UUIDs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 228B59032A94139D0014EEF1 /* UUIDs.swift */; };
 		228B59062A9418790014EEF1 /* MockPeripheral.swift in Sources */ = {isa = PBXBuildFile; fileRef = 228B59052A9418790014EEF1 /* MockPeripheral.swift */; };
-		228B59092A96936A0014EEF1 /* OrderedCollections in Frameworks */ = {isa = PBXBuildFile; productRef = 228B59082A96936A0014EEF1 /* OrderedCollections */; };
 		228B590B2A96CACB0014EEF1 /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 228B590A2A96CACB0014EEF1 /* Storage.swift */; };
 		228B590D2A96CE410014EEF1 /* PeripheralListRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 228B590C2A96CE410014EEF1 /* PeripheralListRow.swift */; };
 		228B590F2A96CF380014EEF1 /* SavedPeripherals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 228B590E2A96CF380014EEF1 /* SavedPeripherals.swift */; };
@@ -70,10 +70,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2245C4372D20F10B006A83BE /* MightFail in Frameworks */,
-				2245C4392D210632006A83BE /* DequeModule in Frameworks */,
-				228B59092A96936A0014EEF1 /* OrderedCollections in Frameworks */,
+				225192262D2227D5007E4C2C /* MightFail in Frameworks */,
 				228B59002A93D11E0014EEF1 /* AsyncCoreBluetooth in Frameworks */,
+				225192292D2227EA007E4C2C /* Collections in Frameworks */,
+				225192232D2227C0007E4C2C /* AsyncCoreBluetooth in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -176,9 +176,9 @@
 			name = AsyncCoreBluetoothExample;
 			packageProductDependencies = (
 				228B58FF2A93D11E0014EEF1 /* AsyncCoreBluetooth */,
-				228B59082A96936A0014EEF1 /* OrderedCollections */,
-				2245C4362D20F10B006A83BE /* MightFail */,
-				2245C4382D210632006A83BE /* DequeModule */,
+				225192222D2227C0007E4C2C /* AsyncCoreBluetooth */,
+				225192252D2227D5007E4C2C /* MightFail */,
+				225192282D2227EA007E4C2C /* Collections */,
 			);
 			productName = AsyncCoreBluetoothExample;
 			productReference = 228B58D02A93D0D10014EEF1 /* AsyncCoreBluetoothExample.app */;
@@ -253,9 +253,9 @@
 			);
 			mainGroup = 228B58C72A93D0D10014EEF1;
 			packageReferences = (
-				228B58FE2A93D11E0014EEF1 /* XCLocalSwiftPackageReference "../AsyncCoreBluetooth" */,
-				228B59072A96936A0014EEF1 /* XCRemoteSwiftPackageReference "swift-collections" */,
-				2245C4352D20F104006A83BE /* XCRemoteSwiftPackageReference "swift-might-fail" */,
+				225192212D2227C0007E4C2C /* XCRemoteSwiftPackageReference "AsyncCoreBluetooth" */,
+				225192242D2227D5007E4C2C /* XCRemoteSwiftPackageReference "swift-might-fail" */,
+				225192272D2227EA007E4C2C /* XCRemoteSwiftPackageReference "swift-collections" */,
 			);
 			productRefGroup = 228B58D12A93D0D10014EEF1 /* Products */;
 			projectDirPath = "";
@@ -673,15 +673,16 @@
 		};
 /* End XCConfigurationList section */
 
-/* Begin XCLocalSwiftPackageReference section */
-		228B58FE2A93D11E0014EEF1 /* XCLocalSwiftPackageReference "../AsyncCoreBluetooth" */ = {
-			isa = XCLocalSwiftPackageReference;
-			relativePath = ../AsyncCoreBluetooth;
-		};
-/* End XCLocalSwiftPackageReference section */
-
 /* Begin XCRemoteSwiftPackageReference section */
-		2245C4352D20F104006A83BE /* XCRemoteSwiftPackageReference "swift-might-fail" */ = {
+		225192212D2227C0007E4C2C /* XCRemoteSwiftPackageReference "AsyncCoreBluetooth" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/meech-ward/AsyncCoreBluetooth.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+		225192242D2227D5007E4C2C /* XCRemoteSwiftPackageReference "swift-might-fail" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/might-fail/swift-might-fail.git";
 			requirement = {
@@ -689,35 +690,35 @@
 				minimumVersion = 0.1.0;
 			};
 		};
-		228B59072A96936A0014EEF1 /* XCRemoteSwiftPackageReference "swift-collections" */ = {
+		225192272D2227EA007E4C2C /* XCRemoteSwiftPackageReference "swift-collections" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/apple/swift-collections.git";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 1.0.4;
+				minimumVersion = 1.1.4;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		2245C4362D20F10B006A83BE /* MightFail */ = {
+		225192222D2227C0007E4C2C /* AsyncCoreBluetooth */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 2245C4352D20F104006A83BE /* XCRemoteSwiftPackageReference "swift-might-fail" */;
+			package = 225192212D2227C0007E4C2C /* XCRemoteSwiftPackageReference "AsyncCoreBluetooth" */;
+			productName = AsyncCoreBluetooth;
+		};
+		225192252D2227D5007E4C2C /* MightFail */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 225192242D2227D5007E4C2C /* XCRemoteSwiftPackageReference "swift-might-fail" */;
 			productName = MightFail;
 		};
-		2245C4382D210632006A83BE /* DequeModule */ = {
+		225192282D2227EA007E4C2C /* Collections */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 228B59072A96936A0014EEF1 /* XCRemoteSwiftPackageReference "swift-collections" */;
-			productName = DequeModule;
+			package = 225192272D2227EA007E4C2C /* XCRemoteSwiftPackageReference "swift-collections" */;
+			productName = Collections;
 		};
 		228B58FF2A93D11E0014EEF1 /* AsyncCoreBluetooth */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = AsyncCoreBluetooth;
-		};
-		228B59082A96936A0014EEF1 /* OrderedCollections */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 228B59072A96936A0014EEF1 /* XCRemoteSwiftPackageReference "swift-collections" */;
-			productName = OrderedCollections;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

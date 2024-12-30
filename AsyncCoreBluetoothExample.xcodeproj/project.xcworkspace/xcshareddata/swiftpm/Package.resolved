@@ -1,6 +1,15 @@
 {
-  "originHash" : "3aa2dd5ed0540a477a324c82ea513053a30d8fab7543c060654360626193cb6e",
+  "originHash" : "a47224bcd8a1f2de334af7d4e9653e7742c8e6aecd54e4f1df800b8ed7de5b4c",
   "pins" : [
+    {
+      "identity" : "asynccorebluetooth",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/meech-ward/AsyncCoreBluetooth.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "7e1ab41034989eb853f23c3d3d7df2106da13453"
+      }
+    },
     {
       "identity" : "ios-corebluetooth-mock",
       "kind" : "remoteSourceControl",
