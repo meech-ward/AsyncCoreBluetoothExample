@@ -1,0 +1,33 @@
+{
+  "originHash" : "3aa2dd5ed0540a477a324c82ea513053a30d8fab7543c060654360626193cb6e",
+  "pins" : [
+    {
+      "identity" : "ios-corebluetooth-mock",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/meech-ward/IOS-CoreBluetooth-Mock.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "10845e90f870a20c5b0a0471a28c8bff8ca2027a"
+      }
+    },
+    {
+      "identity" : "swift-collections",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/apple/swift-collections.git",
+      "state" : {
+        "revision" : "671108c96644956dddcd89dd59c203dcdb36cec7",
+        "version" : "1.1.4"
+      }
+    },
+    {
+      "identity" : "swift-might-fail",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/might-fail/swift-might-fail.git",
+      "state" : {
+        "revision" : "ef1e0f79a74ff6f88442dbcdd56ad9cb8e469732",
+        "version" : "0.1.0"
+      }
+    }
+  ],
+  "version" : 3
+}
